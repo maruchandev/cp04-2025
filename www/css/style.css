@@ -65,6 +65,9 @@ button{
     position:absolute; top:380px; left:70%; width:28%; height:60px; 
 }
 
+#remain{
+    font-weight: bold;
+}
 #minute {
     font-size: 30px;
     position:absolute; top:450px; left:60px; width:80px; height:40px;   
