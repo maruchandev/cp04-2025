@@ -51,6 +51,10 @@
                     $('#btnC').click(function(e) {
                         btnCClick(e);
                     });
+                    $('#cup_ramen').click(function(e) {
+                        cup_ramen_timer(e);
+                    });
+                    
                     init();
                 });
 
@@ -207,8 +211,6 @@
                 // ButtonBがクリックされた時の処理
                 function btnBClick(e){
                     active=false;
-
-
                 }
 
                 // ButtonCがクリックされた時の処理
@@ -237,8 +239,12 @@
                 }
 
                 function cup_ramen_timer(){
+                    if(active)return 0;
+                    period=180;
+                    active=true;
+                    startTime=new Date();
                 }
-                
+
         </script>
     </head>
     <body>
