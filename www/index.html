@@ -27,6 +27,10 @@
         />
         <style></style>
         <script>
+            const use = [];
+
+
+
                 // timer処理
                 $(function(){
                     setInterval(function(){
@@ -223,6 +227,7 @@
                     period = 60* parseInt( $("#minute").val() ) + parseInt( $("#second").val() );
                     $("#time").html("経過時間： 0");
                     $("#remain").html("残り時間： " + period);
+                    use[use.length]=period;
                 }
 
 
@@ -275,5 +280,13 @@
         <img src="cup_ramen.png" class="preset_icons" id="cup_ramen">
         <img src="tamago.png" class="preset_icons" id="tamago">
         <div>
+
+        
+        <div id="used_timer">
+            <h3>今まで使ったタイマー</h3>
+            <button class="use_timer_item"id="use_item1">100s</button>
+            <button class="use_timer_item"id="use_item2">100s</button>
+            <button class="use_timer_item"id="use_item3">100s</button>
+        </div>
     </body>
 </html>

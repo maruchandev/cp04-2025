@@ -96,9 +96,15 @@ input[type=number] {text-align: right;}
 
 
 .preset_icons{
-    width: 100px;
-    margin: 10px;
+    width: 90px;
+    margin: 11px 0px
 }
 #preset{
-    position:absolute; top:580px;left: 90px;
+    position:absolute; top:500px;left: 90px;
+}
+.use_timer_item{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
 }
