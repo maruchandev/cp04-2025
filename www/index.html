@@ -54,6 +54,9 @@
                     $('#cup_ramen').click(function(e) {
                         cup_ramen_timer(e);
                     });
+                    $('#tamago').click(function(e) {
+                        tamago_timer(e);
+                    });
                     
                     init();
                 });
@@ -244,6 +247,12 @@
                     active=true;
                     startTime=new Date();
                 }
+                function tamago_timer(){
+                    if(active)return 0;
+                    period=420;
+                    active=true;
+                    startTime=new Date();
+                }
 
         </script>
     </head>
@@ -257,12 +266,14 @@
         <div id="time">Time</div>
         <input type="number" id="minute" value="0" />
         <input type="number" id="second" value="15" />
-        <button id="btnA">Start</button>
-        <button id="btnB">Stop</button>
+        <button id="btnA">	&#x25b6;</button>
+        <button id="btnB">	&#x23f8;</button>
         <button id="btnC">Set</button>
 
         <div id="preset">
+            <h3>調理メニューを選択</h3>
         <img src="cup_ramen.png" class="preset_icons" id="cup_ramen">
+        <img src="tamago.png" class="preset_icons" id="tamago">
         <div>
     </body>
 </html>
