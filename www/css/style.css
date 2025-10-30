@@ -87,3 +87,11 @@ button{
 }
 
 input[type=number] {text-align: right;}
+
+
+.preset_icons{
+    width: 100px;
+}
+#preset{
+    position:absolute; top:580px; left:2%; width:43%; height:60px; 
+}
